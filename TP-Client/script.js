@@ -30,7 +30,7 @@ function update() {
 // Récupération des messages du serveur
 async function fetchMessages() {
   try {
-    let response = await fetch('https://e2404d70-3d9c-4950-9d4a-4e546eda4c91-00-2ivpk52hib9ac.spock.replit.dev/msg/getAll');
+    let response = await fetch('https://message-board-yoga.onrender.com/msg/getAll');
     if (!response.ok) throw new Error();
 
     serverMsgs = await response.json();
@@ -54,7 +54,7 @@ document.getElementById('sendButton').addEventListener('click', async function()
   localMsgs.push({ user, msg, timestamp });
   update();
 
-  let apiUrl = `https://e2404d70-3d9c-4950-9d4a-4e546eda4c91-00-2ivpk52hib9ac.spock.replit.dev/msg/post/${encodeURIComponent(msg)}/${encodeURIComponent(user)}`;
+  let apiUrl = `https://message-board-yoga.onrender.com/msg/post/${encodeURIComponent(msg)}/${encodeURIComponent(user)}`;
 
   try {
     await fetch(apiUrl, { method: "POST", headers: { "Content-Type": "application/json" } });
