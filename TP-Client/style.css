@@ -1,0 +1,119 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* Style global du site */
+body {
+  font-family: 'Arial', sans-serif;
+  color: black;
+  background-color: #d4e3fe;
+  margin: 0;
+  padding: 0;
+}
+
+body.dark-mode {
+  font-family: 'Arial', sans-serif;
+  color: white;
+  background-color: #232323;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+h1 {
+  font-family: 'Copperplate', fantasy;
+  padding: 15px;
+}
+
+
+/* Liste de messages */
+ul {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 50px;
+  margin: auto;
+  max-width: 600px;
+  list-style-type: "\1f604";
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Chaque message (élément de liste) */
+ul li {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  font-family: 'Courier New', monospace;
+  color: #444;
+}
+
+ul li:last-child {
+  border-bottom: none;
+  /* Pas de bordure après le dernier message */
+}
+
+/* Zone de texte pour nouveau message */
+textarea {
+  width: calc(100% - 40px);
+  /* Prend presque toute la largeur */
+  max-width: 600px;
+  /* Même largeur que la liste */
+  display: block;
+  margin: 20px auto;
+  /* Centré */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  font-size: 1em;
+  color: #aaaaaa;
+}
+
+/* Bouton d'envoi */
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+
+body.dark-mode button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #d6d6d6;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/* Style du footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+body.dark-mode footer {
+  background-color: #ebebeb;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
